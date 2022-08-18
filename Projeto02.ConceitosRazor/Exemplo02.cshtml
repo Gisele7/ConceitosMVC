@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h1>
+            @for (int i = 0; i < 10; i++)
+            {
+            <span>@i</span>
+            }
+            <hr />
+
+            @if (DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
+            {
+                <span>
+                    Hoje é terça-feira.
+                    Agora são @DateTime.Now.ToShortTimeString()
+                </span>
+            }
+            else
+            {
+                <span>
+                    Hoje não é terça-feira.
+                </span>
+            }
+        </h1>
+        
+    </div>
+</body>
+</html>

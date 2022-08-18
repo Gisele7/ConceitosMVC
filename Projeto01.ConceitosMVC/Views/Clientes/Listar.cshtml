@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Projeto01.ConceitosMVC.Models.Cliente>
+@{
+    ViewBag.Title = "Listar";
+}
+@* Layout da tabela *@
+
+<h2>Listar Clientes</h2>
+<table border="1">
+    <tr>
+        <td>CPF</td>
+        <td>Nome</td>
+        <td>Data de Nascimento</td>
+        <td>UF</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Cpf</td>
+            <td>@item.Nome</td>
+            <td>@item.DataNascimento</td>
+            <td>@item.UfResidencia</td>
+        </tr>
+    }
+</table>

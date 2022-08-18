@@ -1,0 +1,15 @@
+﻿@model Projeto01.ConceitosMVC.Models.Cliente
+@{
+    ViewBag.Title = "Exibir clientes";
+}
+
+<h2>Dados do Clientes</h2>
+<strong>CPF: </strong><span>@Model.Cpf</span>
+<br />
+<strong>Nome: </strong><span>@Model.Nome</span>
+<br />
+<strong>Data de Nascimento: </strong><span>@Model.DataNascimento.ToString("d")</span>
+<br />
+<strong>UF da Residência: </strong><span>@Model.UfResidencia</span>
+<br />
+

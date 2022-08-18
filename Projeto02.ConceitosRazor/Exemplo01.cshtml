@@ -1,0 +1,35 @@
+﻿@*@ é um dos símbolos que o Razor usa*@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <h2>Exemplo de utilização do Razor - variáveis</h2>
+        <h3>Hoje é @DateTime.Now</h3>
+        <hr />
+        @{
+            var x = 20;
+            var y = 15;
+        }
+        A soma de @x com @y é @(x+y)
+        <hr />
+        @*aqui temos conteúdo html e c# misturados, utilizando razor*@ 
+        @for (int i = 1; i < 10; i++)
+        {
+            <p>
+                O valor de i é
+                <span>@i</span>
+
+            </p>
+        }
+    </div>
+</body>
+</html>
