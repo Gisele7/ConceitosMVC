@@ -3,27 +3,27 @@
     ViewBag.Title = "Cadastro";
 }
 
-<h2>Cadastro de Produtos</h2>
-@*Formulário*@
-<div>
-    @*CRIANDO COM FORMULÁRIO *@
-    @*TODO PARÂMETRO COMEÇADO COM "THIS" INDICA UM MÉTODO DE EXTENSÃO*@
-    @*No BeginForm o método Post é padrão.*@
-    @using (Html.BeginForm())
-    {
-        <span>Código:</span><br />
-        @Html.TextBox("codigoTextBox")<br />
+    <h2 class="titulo">Cadastro de Produtos</h2>
+    @*Formulário*@
+    <div>
+        @*CRIANDO COM FORMULÁRIO *@
+        @*TODO PARÂMETRO COMEÇADO COM "THIS" INDICA UM MÉTODO DE EXTENSÃO*@
+        @*No BeginForm o método Post é padrão.*@
+        @using (Html.BeginForm())
+        {
+            <span>Código:</span><br />
+            @Html.TextBox("codigoTextBox")<br />
 
-        <span>Descrição:</span><br />
-        @Html.TextBox("descricaoTextBox")<br />
+            <span>Descrição:</span><br />
+            @Html.TextBox("descricaoTextBox")<br />
 
-        <span>Preço:</span><br />
-        @Html.TextBox("precoTextBox")<br />
+            <span>Preço:</span><br />
+            @Html.TextBox("precoTextBox")<br />
+            <br />
 
-        <input type="submit" value="Enviar" />
-    
-    }
+            <input type="submit" value="Enviar" />
 
+        }
+    </div>
 
-</div>
 

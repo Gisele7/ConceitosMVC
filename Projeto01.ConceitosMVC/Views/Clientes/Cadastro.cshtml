@@ -4,35 +4,39 @@
     ViewBag.Title = "Exibir";
 }
 
-<h2>Cadastro de Clientes</h2>
+<h2 class="titulo">Cadastro de Clientes</h2>
 
 
 @using (Html.BeginForm())
 {
     @*Expressão Lambda*@
 
-    <div>
-        @Html.LabelFor(m => m.Cpf)<br />
-        @Html.EditorFor(m => m.Cpf)
-        @Html.ValidationMessageFor(m => m.Cpf)
-        <br />
+<div class="input">
+    @Html.LabelFor(m => m.Cpf)<br />
+    @Html.EditorFor(m => m.Cpf)
+    @Html.ValidationMessageFor(m => m.Cpf)
+    <br />
 
-        @Html.LabelFor(m => m.Nome)<br />
-        @Html.EditorFor(m => m.Nome)
-        @Html.ValidationMessageFor(m => m.Nome)
-        <br />
+    @Html.LabelFor(m => m.Nome)<br />
+    @Html.EditorFor(m => m.Nome)
+    @Html.ValidationMessageFor(m => m.Nome)
+    <br />
 
-        @Html.LabelFor(m => m.DataNascimento)<br />
-        @Html.EditorFor(m => m.DataNascimento)
-        @Html.ValidationMessageFor(m => m.DataNascimento)
-        <br />
+    @Html.LabelFor(m => m.DataNascimento)<br />
+    @Html.EditorFor(m => m.DataNascimento)
+    @Html.ValidationMessageFor(m => m.DataNascimento)
+    <br />
 
-        @Html.LabelFor(m => m.UfResidencia)<br />
-        @Html.DropDownListFor(m => m.UfResidencia, (SelectList)ViewBag.ListaEstados, "Escolha uma opção.")
-        @Html.ValidationMessageFor(m => m.UfResidencia)
-        <br />
+    @Html.LabelFor(m => m.UfResidencia)<br />
+    @Html.DropDownListFor(m => m.UfResidencia, (SelectList)ViewBag.ListaEstados, "Escolha uma opção.", new { @style = "size: 40px" })
+    @Html.ValidationMessageFor(m => m.UfResidencia)
+    <br />
+    <br />
 
-        <input type="submit" value="Enviar" />
 
-    </div>
+    <input type="submit" value="Enviar" />
+    <a>@Html.ActionLink("Voltar", "Index", "Clientes")</a>
+
+
+</div>
 }

@@ -16,3 +16,159 @@ textarea {
     max-width: 280px;
 }
 
+
+.bg-custom-1 {
+    background-color: #d8c5c5;
+}
+
+.bg-custom-2 {
+    background-image: linear-gradient(15deg, #85aabf 0%, #a5cea3 100%);
+}
+
+.bg body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 50vh;
+}
+
+.css-selector {
+    background: linear-gradient(270deg, #97abbf, #9ec1a4, #c7b8d1, #caaec8);
+    background-size: 800% 800%;
+    -webkit-animation: bg-custom-2 39s ease infinite;
+    -moz-animation: bg-custom-2 39s ease infinite;
+    animation: bg-custom-2 39s ease infinite;
+}
+
+@-webkit-keyframes bg-custom-2 {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes bg-custom-2 {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes bg-custom-2 {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.bg-custom-2 {
+    background: linear-gradient(-30deg, #bfb2d5, #94accb, #aaa9cc, #9bc393);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    /*height: 20vh;*/
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-weight: bold;
+    color: black !important;
+}
+.navbar-inverse .navbar-brand{
+    color: black !important;
+    font-weight: bold;
+}
+
+.corpo {
+    background-color: #d3cad2;
+   
+}
+
+a {
+    color: black !important;
+    
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #99a5eb !important;
+    border-color: black !important;
+}
+
+
+
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 10px !important;
+}
+
+.h2, h2 {
+    font-size: 30px;
+    color: black !important;
+}
+
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: black !important;
+}
+
+#tabela {
+    border: #000 solid 1px;
+    padding: 0px;
+    cursor: auto;
+    /*Permite configurar o layout em fixo, ou seja, não redimensiona a célula de acordo com o conteúdo.*/
+    table-layout: fixed;
+}
+
+  
+
+    #tabela td {
+        padding: 5px;
+        border: #000 solid 1px;
+        color: black;
+        
+    }
+
+    #tabela th {
+        text-align: center;
+        border: #000 solid 1px;
+        color: black;
+    }

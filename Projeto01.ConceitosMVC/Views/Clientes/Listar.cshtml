@@ -3,23 +3,26 @@
     ViewBag.Title = "Listar";
 }
 @* Layout da tabela *@
-
-<h2>Listar Clientes</h2>
-<table border="1">
-    <tr>
-        <td>CPF</td>
-        <td>Nome</td>
-        <td>Data de Nascimento</td>
-        <td>UF</td>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.Cpf</td>
-            <td>@item.Nome</td>
-            <td>@item.DataNascimento</td>
-            <td>@item.UfResidencia</td>
+<center>
+    <h2 class="titulo">Lista de Clientes</h2>
+    <table border="1" class="table-responsive" id="tabela">
+        <tr style="text-align: center; font-weight: bold">
+            <td>CPF</td>
+            <td>Nome</td>
+            <td>Data de Nascimento</td>
+            <td>UF</td>
         </tr>
-    }
-</table>
+
+        @foreach (var item in Model)
+        {
+            <tr style="text-align: center">
+                <td>@item.Cpf</td>
+                <td>@item.Nome</td>
+                <td>@item.DataNascimento</td>
+                <td>@item.UfResidencia</td>
+            </tr>
+        }
+    </table>
+</center>
+
+<a>@Html.ActionLink("Voltar", "Index", "Clientes")</a>
